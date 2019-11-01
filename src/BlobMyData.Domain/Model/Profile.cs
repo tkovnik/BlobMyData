@@ -10,6 +10,8 @@ namespace BlobMyData.Domain.Model
         private string _MachineName;
         private string _Description;
 
+        private ICollection<ProfileSource> _ProfileSources;
+
         public string Name
         {
             get => _Name;
@@ -46,6 +48,16 @@ namespace BlobMyData.Domain.Model
                     _Description = value;
                     NotifyPropertyChanged(nameof(Description));
                 }
+            }
+        }
+
+        public ICollection<ProfileSource> ProfileSources
+        {
+            get => _ProfileSources;
+            set
+            {
+                _ProfileSources = value;
+                NotifyPropertyChanged(nameof(ProfileSources));
             }
         }
     }
