@@ -14,7 +14,7 @@ namespace BlobMyData.Domain.Model
 
         #region Public Properties
 
-        public string Name
+        public virtual string Name
         {
             get => _Name;
             set
@@ -27,7 +27,7 @@ namespace BlobMyData.Domain.Model
             }
         }
 
-        public string FullName
+        public virtual string FullName
         {
             get => _FullName;
             set
@@ -40,7 +40,7 @@ namespace BlobMyData.Domain.Model
             }
         }
 
-        public DateTime LastBackupDate
+        public virtual DateTime LastBackupDate
         {
             get => _LastBackupDate;
             set
@@ -53,7 +53,7 @@ namespace BlobMyData.Domain.Model
             }
         }
 
-        public string Comment
+        public virtual string Comment
         {
             get => _Comment;
             set
@@ -66,7 +66,7 @@ namespace BlobMyData.Domain.Model
             }
         }
 
-        public string Tags
+        public virtual string Tags
         {
             get => _Tags;
             set

@@ -12,7 +12,7 @@ namespace BlobMyData.Domain.Model
 
         #region Public Properties
 
-        public string Path 
+        public virtual string Path 
         { 
             get => _Path;
             set 
@@ -22,7 +22,7 @@ namespace BlobMyData.Domain.Model
             } 
         }
 
-        public ICollection<SourceFile> Files
+        public virtual ICollection<SourceFile> Files
         {
             get => _Files;
             set
