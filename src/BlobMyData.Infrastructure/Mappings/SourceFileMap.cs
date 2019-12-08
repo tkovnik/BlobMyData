@@ -8,20 +8,18 @@ using System.Threading.Tasks;
 
 namespace BlobMyData.Infrastructure.Mappings
 {
-    public class ProfileMap : ClassMap<Profile>
+    public class SourceFileMap : ClassMap<SourceFile>
     {
-        public ProfileMap()
+        public SourceFileMap()
         {
             Id(x => x.Id);
             Map(x => x.Name);
-            Map(x => x.MachineName);
-            Map(x => x.Description);
+            Map(x => x.FullName);
+            Map(x => x.LastBackupDate);
+            Map(x => x.Comment);
+            Map(x => x.Tags);
 
-            HasMany(x => x.ProfileSources)
-                .KeyColumn("ProfileId")
-                .Inverse()
-                .Cascade
-                .All();
+
         }
     }
 }

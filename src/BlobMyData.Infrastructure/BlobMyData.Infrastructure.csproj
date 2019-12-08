@@ -62,16 +62,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Base\DbProvider.cs" />
+    <Compile Include="Base\Result.cs" />
     <Compile Include="DAL\DbContext.cs" />
+    <Compile Include="Mappings\BlobStorageMap.cs" />
     <Compile Include="Mappings\ProfileMap.cs" />
+    <Compile Include="Mappings\ProfileSourceMap.cs" />
+    <Compile Include="Mappings\SourceFileMap.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Base\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\BlobMyData.Domain\BlobMyData.Domain.csproj">
       <Project>{5F88F331-9A0C-4961-9025-0DD6C1975D02}</Project>

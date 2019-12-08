@@ -12,7 +12,7 @@ namespace BlobMyData.Domain.Model
 
         private ICollection<ProfileSource> _ProfileSources;
 
-        public string Name
+        public virtual string Name
         {
             get => _Name;
             set
@@ -25,7 +25,7 @@ namespace BlobMyData.Domain.Model
             }
         }
 
-        public string MachineName
+        public virtual string MachineName
         {
             get => _MachineName;
             set
@@ -38,7 +38,7 @@ namespace BlobMyData.Domain.Model
             }
         }
 
-        public string Description
+        public virtual string Description
         {
             get => _Description;
             set
@@ -51,7 +51,7 @@ namespace BlobMyData.Domain.Model
             }
         }
 
-        public ICollection<ProfileSource> ProfileSources
+        public virtual ICollection<ProfileSource> ProfileSources
         {
             get => _ProfileSources;
             set
